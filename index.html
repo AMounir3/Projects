@@ -1,1 +1,103 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+<!-- Bootstarp core CSS below -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<link href="css/custom.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link type="text/css" rel= "stylesheet" href= "stylesheet.css"/>
+  </head>
+  <body>
+<!-- Navbar START -->
+<!-- Ref below code
+     1) navbar-static-top means navbar will be fixed on the page top eventhough user scroll down. There is also
+        navbar-defult & navbar-static classes.
+		 2) navbar-inverse is a CSS code in Bootstrap to make navbar looks like ours
+		 3) navbar is ID -->
+		<nav class="navbar navbar-inverse navbar-static-top">
+<!-- Ref below code till Navbar ends, is a container for brand, dropdown manue and other elements in navbar itsel -->			
+			<div class="container">
+				<div class="navbar-header">
+<!-- Below code is to make the 3 lines in navbar right side in case user is showing site on small screen, which upon
+     clicking it dropdown manu shows
+     THIS IS A REUSEABLE CODE-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+<!-- Ref below code; setting up navbar LEFT SIDE ELEMENTS
+     1) The use of navbar-brand is to make the text or photo used fill in the space bold. see example -->
+					<a class="navbar-brand" href="/Users/ahmedmounir/Documents/HTML/Revesion/bootstrap-3.3.7-dist/index.html">Balance Web Development</a>
+<!-- Ref below code; setting up navbar RIGHT SIDE ELEMENTS.
+     1) Created a seperate div
+		 2) Listed main dropdown menu elements "About, Services & Contact" in unordered list
+		 3) Created sub-dropdown menu for "Services" in unordered list-->					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+<!-- Right side dropdown menu elements: About-->							
+							<li><a href="/Users/ahmedmounir/Documents/HTML/Revesion/bootstrap-3.3.7-dist/about.html">About</a></li>
+<!-- Right side dropdown menu elements: Services-->
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+<!-- Right side sub-dropdown menu elements: Sub services elements-->								
+								<ul class="dropdown-menu">
+									<li><a href="#">Design</a></li>
+									<li><a href="#">Development</a></li>
+									<li><a href="#">Consulting</a></li>
+								</ul>
+							</li>
+<!-- Right side dropdown menu elements: Contact-->							
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+		</nav>
+<!-- Navbar END -->		
+		<div class="jumbotron">
+	<div class="container">
+		<h1>Ready. Set. Code.</h1>
+		<p>Are you ready to boilerstrap your cross-compatible buzzword? We're Sassy, flat and semantic, so what are you waiting for?</p>
+		<br>
+		<p><a class="btn btn-primary btn-lg" href="#" role="button">Download Free Trial »</a> <a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+	</div>
+</div>
+		<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+			<h3>Cloud Computable</h3>
+			<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+		</div>
+		<div class="col-md-4">
+			<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+			<h3>Backwards Compatible</h3>
+			<p>Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Lorem ipsum dolor.</p>
+		</div>
+		<div class="col-md-4">
+			<span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+			<h3>GUI Free</h3>
+			<p>Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+		</div>
+	</div>
+</div>
+<!-- Calling JQuery from Google & JavaScript from Bootstarp below -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		<section class="call-to-action">
+<!-- .rows and .columns -->
+  <span class="glyphicon glyphicon-cloud glyphicon-large" aria-hidden="true"></span>
+<!-- /.rows and .columns -->
+</section>
+  </body>
+</html>
